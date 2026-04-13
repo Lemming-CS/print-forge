@@ -1,10 +1,9 @@
-
 export default function Page() {
-return (
+  return (
     <div className="p-4 flex justify-center">
       <h1>  
-        About page
+        Products page
       </h1>
     </div>
-  );
+  )
 }
