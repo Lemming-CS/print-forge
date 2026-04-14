@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import img from "../public/heroImage.png";
-
 export default function Home() {
   return (
     <div className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
@@ -27,7 +25,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Image src={img} width={350} alt="hero-image" />
+      <Image src="/heroImage.png" width={350} height={350} alt="hero-image" />
     </div>
   );
 }
