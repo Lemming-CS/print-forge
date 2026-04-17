@@ -1,31 +1,46 @@
 import Image from "next/image";
+import heroImageSquare from "@/public/heroImageSquare.png"
 
 export default function Page() {
   return (
     <div className="flex flex-col py-8 px-4">
-      <h1 className="text-center font-bold text-3xl"> About PrintForge</h1>
-      <div className="grid items-center gap-8 mb-12 md:grid-cols-2 container max-w-3xl px-4 py-8 mx-auto">
-        <Image
-          src="/heroImageSquare.png"
-          className="w-full max-w-xl"
-          alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
-          width="350"
-          height="350"
-        />
-        <div className="flex flex-col gap-7 my-auto">
-          <p className="uppercase text-gray-400">about PrintForge</p>
-          <h1 className="text-3xl font-bold font-serif">
-            Empowering makers worldwide
-          </h1>
-          <p className="">
-            Founded in 2023, PrintForge has quickly become the go-to platform
-            for 3D printing enthusiasts, makers, and professional designers to
-            share and discover amazing STL files for 3D printing. Our mission is
-            to foster a vibrant community where creativity meets technology,
-            enabling anyone to bring their ideas to life through 3D printing.
-          </p>
+      <section className="container max-w-4xl px-4 py-8 mx-auto">
+        <h1 className="mb-6 text-4xl font-bold text-center">
+          About PrintForge
+        </h1>
+
+        <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
+          <div className="relative h-75 w-full">
+            <Image
+              src={heroImageSquare}
+              alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
+              width="350"
+              className="rounded-sm"
+            />
+          </div>
+          <div>
+            <p
+              className="mb-4 text-sm text-gray-600 uppercase"
+              aria-hidden="true"
+            >
+              About PrintForge
+            </p>
+            <h2 className="mb-4 text-2xl font-semibold">
+              Empowering Makers Worldwide
+            </h2>
+            <p className="mb-4 text-gray-700">
+              Founded in 2023, PrintForge has quickly become the go-to platform
+              for 3D printing enthusiasts, makers, and professional designers to
+              share and discover amazing STL files for 3D printing.
+            </p>
+            <p className="text-gray-700">
+              Our mission is to foster a vibrant community where creativity
+              meets technology, enabling anyone to bring their ideas to life
+              through 3D printing.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
       <hr className="border-gray-200" aria-hidden="true" />
 
       <section className="py-12" aria-labelledby="key-features">
